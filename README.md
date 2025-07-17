@@ -1,5 +1,5 @@
 # GitHub Collaboration Guide
-<img width="512" height="384" alt="catgithub" src="https://github.com/user-attachments/assets/470c3ee0-d062-4b5b-a24f-e94aeff8630d" />
+<img width="384" height="512" alt="catgithub" src="https://github.com/user-attachments/assets/470c3ee0-d062-4b5b-a24f-e94aeff8630d" />
 
 ## Create & Share the Repository
 
