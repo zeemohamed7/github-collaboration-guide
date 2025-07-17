@@ -52,6 +52,7 @@ git checkout -b yourname-feature
 
 ## Daily Coding Workflow
 1. Pull the latest changes from main
+2. 
 Before you start any work, update your local main branch:
 ```bash
 git checkout main
@@ -85,8 +86,6 @@ git commit -m "Add: [brief description of change]"
 
 > 💡 Use clear, consistent commit messages like:
 > add register form UI
-> fix navbar layout bug
-> update form validation logic
 
 4. Sync with Latest main (to Avoid Conflicts)
 
@@ -114,6 +113,7 @@ git checkout your-feature-branch
 git merge main
 ```
 4. Open the conflicted files
+
 Look for conflict markers like:
 ```bash
 <<<<<<< HEAD
@@ -137,12 +137,14 @@ git push origin your-feature-branch
  </details>
 
 5. Push Your Branch to GitHub
+
 Once your code is ready:
 ```bash
 git push origin yourname-feature
 ```
 
 6. Open a Pull Request (PR)
+
 Go to your GitHub repo.
 Click "Compare & Pull Request".
 
@@ -152,6 +154,7 @@ Add:
 - Request a review from your teammates.
 
 7. After Merging Your PR
+
 Everyone on the team should update their local main:
 ```bash
 git checkout main
