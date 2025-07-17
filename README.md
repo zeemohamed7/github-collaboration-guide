@@ -18,7 +18,7 @@ cd <repo-folder>
 
 ## Install Dependencies & Set Up `.env`
 ### Install Node packages
-- Inside the project folder:
+Inside the project folder:
 ```bash
 npm install
 ``` 
