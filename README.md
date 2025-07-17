@@ -76,6 +76,7 @@ git merge main
 > ⚠️ When merging the newest code in the main branch into your feature branch, it's possible to create merge conflicts. 
 
 3. Do Your Work and Commit It
+   
 After editing files, save and commit your work:
 ```bash
 git add .
@@ -88,6 +89,7 @@ git commit -m "Add: [brief description of change]"
 > update form validation logic
 
 4. Sync with Latest main (to Avoid Conflicts)
+
 Before pushing, make sure your branch has the latest updates from main:
 ```bash
 git checkout main
