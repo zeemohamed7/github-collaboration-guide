@@ -51,25 +51,31 @@ git checkout -b yourname-feature
 
 
 ## Daily Coding Workflow
-1. Pull the Latest Changes from main
-- Before you start any work, update your local main branch:
+1. Pull the latest changes from main
+Before you start any work, update your local main branch:
 ```bash
 git checkout main
 git pull origin main
 ```
 
 2. Create or Switch to Your Feature Branch
-- If you're starting a new feature:
+#### If you're starting a new feature:
 ```bash
 git checkout -b yourname-feature
 ```
 
-If you're continuing work on an existing branch:
+#### If you're continuing work on an existing branch:
 ```bash
 git checkout yourname-feature
 ```
+Then merge the latest code into the feature branch so that you can use it:
+```bash
+git merge main
+```
 
-3. Make Code Changes and Commit Them
+> ⚠️ When merging the newest code in the main branch into your feature branch, it's possible to create merge conflicts. 
+
+3. Do Your Work and Commit It
 After editing files, save and commit your work:
 ```bash
 git add .
@@ -77,9 +83,9 @@ git commit -m "Add: [brief description of change]"
 ```
 
 > 💡 Use clear, consistent commit messages like:
-> Add: register form UI
-> Fix: navbar layout bug
-> Update: form validation logic
+> add register form UI
+> fix navbar layout bug
+> update form validation logic
 
 4. Sync with Latest main (to Avoid Conflicts)
 Before pushing, make sure your branch has the latest updates from main:
@@ -97,15 +103,15 @@ git merge main
    git checkout main
    git pull origin main
 ```
-Switch back to your feature branch
+2. Switch back to your feature branch
 ```bash
 git checkout your-feature-branch
 ```
-Merge main into your branch
+3. Merge main into your branch
 ```bash
 git merge main
 ```
-Open the conflicted files
+4. Open the conflicted files
 Look for conflict markers like:
 ```bash
 <<<<<<< HEAD
@@ -114,19 +120,18 @@ Look for conflict markers like:
 // incoming changes
 >>>>>>> main
 ```
-Manually edit the file to keep or combine code
-Then delete the conflict markers.
+5. Manually edit the file to keep or combine code then delete the conflict markers.
 
-Stage and commit the resolved file
+6. Stage and commit the resolved file
 ```bash
 git add .
 git commit -m "Fix: resolved merge conflict"
 ```
-Push your branch to GitHub
+7. Push your branch to GitHub
 ```bash
 git push origin your-feature-branch
 ```
-You can now finish your pull request as normal!
+8. You can now finish your pull request as normal!
  </details>
 
 5. Push Your Branch to GitHub
