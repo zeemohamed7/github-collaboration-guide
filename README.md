@@ -2,13 +2,13 @@
 
 ## Create & Share the Repository
 
-### Step 1: GitHub Manager
-- One person (the **GitHub Manager**) creates the repository on [GitHub](https://github.com).
+### GitHub Manager
+- One person (the **GitHub Manager**) creates the repository on GitHub
 - They go to: Repo → Settings → Collaborators
 - Add team members by their GitHub username or email.
-- Everyone else will get an **email or notification** — click **"Accept Invitation"**.
+- Everyone else will get an **email or notification**, click **"Accept Invitation"**.
 
-### Step 2: Clone the Shared Repo
+### Clone the Shared Repo
 Once added, each teammate runs this in their terminal:
 
 ```bash
@@ -52,14 +52,14 @@ git checkout -b yourname-feature
 
 ## Daily Coding Workflow
 1. Pull the Latest Changes from main
-Before you start any work, update your local main branch:
+- Before you start any work, update your local main branch:
 ```bash
 git checkout main
 git pull origin main
 ```
 
 2. Create or Switch to Your Feature Branch
-If you're starting a new feature:
+- If you're starting a new feature:
 ```bash
 git checkout -b yourname-feature
 ```
@@ -89,8 +89,8 @@ git pull origin main
 git checkout yourname-feature
 git merge main
 ```
-> If there are merge conflicts:
-> ## How to Resolve Merge Conflicts 
+ <details>
+  <summary>‼️ How to Resolve Merge Conflicts </summary>
 
 1. **Switch to `main` and pull the latest code**  
 ```bash
@@ -127,22 +127,22 @@ Push your branch to GitHub
 git push origin your-feature-branch
 ```
 You can now finish your pull request as normal!
+ </details>
 
 5. Push Your Branch to GitHub
 Once your code is ready:
 ```bash
 git push origin yourname-feature
 ```
+
 6. Open a Pull Request (PR)
 Go to your GitHub repo.
 Click "Compare & Pull Request".
 
 Add:
-A clear title (e.g., Add login functionality)
-
-A short description of what you did
-
-Request a review from your teammates.
+- A clear title (e.g., Add login functionality)
+- A short description of what you did
+- Request a review from your teammates.
 
 7. After Merging Your PR
 Everyone on the team should update their local main:
@@ -150,5 +150,6 @@ Everyone on the team should update their local main:
 git checkout main
 git pull origin main
 ```
+
 > ✅ Repeat this workflow for every new feature or fix!
 
