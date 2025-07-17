@@ -99,20 +99,7 @@ git merge main
  <details>
   <summary>‼️ How to Resolve Merge Conflicts </summary>
 
-1. **Switch to `main` and pull the latest code**  
-```bash
-   git checkout main
-   git pull origin main
-```
-2. Switch back to your feature branch
-```bash
-git checkout your-feature-branch
-```
-3. Merge main into your branch
-```bash
-git merge main
-```
-4. Open the conflicted files
+1. Open the conflicted files
 
 Look for conflict markers like:
 ```bash
@@ -122,18 +109,18 @@ Look for conflict markers like:
 // incoming changes
 >>>>>>> main
 ```
-5. Manually edit the file to keep or combine code then delete the conflict markers.
+2. Manually edit the file to keep or combine code then delete the conflict markers.
 
-6. Stage and commit the resolved file
+3. Stage and commit the resolved file
 ```bash
 git add .
 git commit -m "Fix: resolved merge conflict"
 ```
-7. Push your branch to GitHub
+4. Push your branch to GitHub
 ```bash
 git push origin your-feature-branch
 ```
-8. You can now finish your pull request as normal!
+5. You can now finish your pull request as normal!
  </details>
 
 5. Push Your Branch to GitHub
